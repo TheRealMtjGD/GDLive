@@ -1,6 +1,7 @@
 class staticobject:
     def __init__(self, objectstr: str) -> None:
         self.__object = objectstr.split(',')
+        self._obj = 'static'
     
     def __getobjectvalue(self, key: str) -> str:
         for index, value in enumerate(self.__object):
@@ -48,4 +49,5 @@ class staticobject:
 
 
 class dynamicobject:
-    ...
+    def __init__(self) -> None:
+        self._obj = 'dynamic'
