@@ -11,7 +11,7 @@ class levelmap:
             self.levelmap[staticobject.placement['x']][staticobject.placement['y']] = staticobject
     
     
-    def getobjectdata(self, x: int, y: int) -> objects.staticobject:
+    def getobjectdata(self, x: int, y: int) -> objects.staticobject|objects.dynamicobject:
         return self.levelmap[x][y]
     
     @property
